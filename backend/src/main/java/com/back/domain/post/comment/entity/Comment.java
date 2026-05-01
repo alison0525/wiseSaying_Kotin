@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
 public class Comment extends BaseEntity {
     private String content;
 
@@ -27,6 +26,18 @@ public class Comment extends BaseEntity {
         this.author = author;
         this.content = content;
         this.post = post;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Post getPost() {
+        return post;
+    }
+
+    public Member getAuthor() {
+        return author;
     }
 
     public void update(String content) {
