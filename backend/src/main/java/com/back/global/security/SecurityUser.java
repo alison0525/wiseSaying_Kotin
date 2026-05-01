@@ -18,4 +18,12 @@ public class SecurityUser extends User {
         this.id = id;
         this.nickname = nickname;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
 }
